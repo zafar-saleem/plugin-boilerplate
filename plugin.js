@@ -1,3 +1,9 @@
+/*
+$.fn.pluginName.options.limit = 5;
+$('.class1').pluginName();
+$('.class2').pluginName();
+*/
+
 if (typeof Object.create !== 'function') {
 	Object.create = function (obj) {
 		function F() {};
