@@ -1,18 +1,15 @@
-/*
-$.fn.pluginName.options.limit = 5;
-$('.class1').pluginName();
-$('.class2').pluginName();
-*/
-
-if (typeof Object.create !== 'function') {
+;if (typeof Object.create !== 'function') {
 	Object.create = function (obj) {
+		"use strict";
+
 		function F() {};
 		F.prototype = obj;
 		return new F();
 	}
 }
 
-;(function ($) {
+(function ($) {
+	"use strict";
 
 	var ModuleName = (function () {
 		var init = function (options, el) {
